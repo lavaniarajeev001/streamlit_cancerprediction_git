@@ -7,7 +7,7 @@ from pathlib import Path
 
 def get_clean_data():
     data_csv=Path(__file__).parents[2] / 'C:/Users/user/Docker/BreastCancer/data.csv'
-    data = pd.read_csv("data_csv")
+    data = pd.read_csv(data_csv)
     data = data.drop(["Unnamed: 32"],axis=1)
     data = data.drop(["id"],axis=1)
     data["diagnosis"] = data["diagnosis"].map({"M":1,"B":0})
