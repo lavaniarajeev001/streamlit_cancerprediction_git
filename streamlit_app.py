@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 import numpy as np
 
 def get_clean_data():
-    data = pd.read_csv("C:/Users/user/Docker/BreastCancer/data.csv")
+    data = pd.read_csv("/data.csv")
     data = data.drop(["Unnamed: 32"],axis=1)
     data = data.drop(["id"],axis=1)
     data["diagnosis"] = data["diagnosis"].map({"M":1,"B":0})
