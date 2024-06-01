@@ -6,7 +6,7 @@ import numpy as np
 from pathlib import Path
 
 def get_clean_data():
-    data_csv=Path(__file__).parents[2] / 'C:/Users/user/Docker/BreastCancer/data.csv'
+    data_csv=Path(__file__).parents[6] / 'C:/Users/user/Docker/BreastCancer/data.csv'
     data = pd.read_csv(data_csv)
     data = data.drop(["Unnamed: 32"],axis=1)
     data = data.drop(["id"],axis=1)
