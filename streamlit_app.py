@@ -138,7 +138,7 @@ def get_radar_chart(input_data):
 
 
 def add_prediction(input_data):
-    pickle_in = open("C:/Users/user/Docker/BreastCancer/lr.pkl","rb")
+    pickle_in = open("lr.pkl","rb")
     classifier  = pickle.load(pickle_in)
 
     input_array=np.array(list(input_data.values())).reshape(1,-1)
